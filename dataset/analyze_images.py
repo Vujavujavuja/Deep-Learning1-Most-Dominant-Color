@@ -1,5 +1,5 @@
-import cv2
 import os
+import cv2
 
 dataset_path = "Hyacinth (Hyacinthus orientalis)"
 print(f"Total images: {len(os.listdir(dataset_path))}")

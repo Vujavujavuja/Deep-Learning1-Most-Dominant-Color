@@ -6,7 +6,7 @@ import pycuda.driver as cuda
 import pycuda.autoinit
 from pycuda.compiler import SourceModule
 
-from dataset.analyze import dataset_path
+from dataset.analyze_images import dataset_path
 
 print(f"Number of GPUs available: {cuda.Device.count()}")
 device = cuda.Device(0)
