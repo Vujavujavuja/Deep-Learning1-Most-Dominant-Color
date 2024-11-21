@@ -19,14 +19,13 @@ __global__ void count_rgb(unsigned char *image, int *counters, int width, int he
     int idy = threadIdx.y + blockIdx.y * blockDim.y;
 
     if (idx < width && idy < height) {
-        int pixel_index = (idy * width + idx) * 3; // RGB values
+        int pixel_index = (idy * width + idx) * 3; 
         int r = image[pixel_index];
         int g = image[pixel_index + 1];
         int b = image[pixel_index + 2];
 
-        // Flatten RGB value into a single key
-        int color_key = (r << 16) | (g << 8) | b; // Combine R, G, B into a single integer key
-        atomicAdd(&counters[color_key], 1);       // Atomic increment of the corresponding color counter
+        int color_key = (r << 16) | (g << 8) | b; 
+        atomicAdd(&counters[color_key], 1);       
     }
 }
 """
