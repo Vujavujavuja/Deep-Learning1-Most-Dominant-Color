@@ -1,7 +1,7 @@
 import os
 from PIL import Image
 
-dataset_path = "Hyacinth (Hyacinthus orientalis)"
+dataset_path = "images1"
 invalid_images = []
 
 for img_file in os.listdir(dataset_path):

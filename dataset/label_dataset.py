@@ -86,7 +86,7 @@ def process_dataset(dataset_path, output_csv):
     print(f"Results saved to {output_csv}")
 
 if __name__ == "__main__":
-    dataset_path = "Hyacinth (Hyacinthus orientalis)"
+    dataset_path = "images1"
     #dataset_path = "test"
     #output_csv = "test.csv"
     output_csv = "dataset.csv"

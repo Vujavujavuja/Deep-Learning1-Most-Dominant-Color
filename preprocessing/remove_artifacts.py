@@ -6,7 +6,7 @@ artifact_images = [143, 145, 158, 16, 164, 17, 198, 21, 213, 217, 235, 24, 249, 
 artifact_images_with_extension = [f"{img}.jpg" for img in artifact_images]
 
 data = pd.read_csv(r'C:\Users\nvuji\OneDrive\Documents\GitHub\Deep-Learning1-Most-Dominant-Color\dataset\data\dataset.csv')
-path_to_images = r'C:\Users\nvuji\OneDrive\Documents\GitHub\Deep-Learning1-Most-Dominant-Color\dataset\Hyacinth (Hyacinthus orientalis)'
+path_to_images = r'C:\Users\nvuji\OneDrive\Documents\GitHub\Deep-Learning1-Most-Dominant-Color\dataset\images1'
 
 destination_folder = r'C:\Users\nvuji\OneDrive\Documents\GitHub\Deep-Learning1-Most-Dominant-Color\preprocessing\images'
 
