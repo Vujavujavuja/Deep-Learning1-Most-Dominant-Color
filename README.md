@@ -6,7 +6,7 @@ A deep learning project that trains a network to look at an image and output its
 
 **Labelling.** There is no ready-made dataset for this, so the labels are computed. `dataset/label_dataset.py` counts every distinct RGB value in an image on the GPU with a custom CUDA kernel (PyCUDA) and writes the most frequent one to `dataset.csv`: about 14,000 images, each with its dominant color as RGB and hex.
 
-**Analysis and cleaning.** The scripts in `data_analysis/` look at the label distribution: black-and-white images, vibrancy, unique colors, RGB clustering, and scanning artifacts. `preprocessing/` drops the images flagged as artifacts and produces `cleaned_dataset.csv`.
+**Analysis and cleaning.** The scripts in `data_analysis/` look at the label distribution: black-and-white images, vibrancy, unique colors, RGB clustering, and image artifacts. `preprocessing/` drops the images flagged as artifacts and produces `cleaned_dataset.csv`.
 
 **Models.** Regression to three values (R, G, B scaled to 0 to 1), trained with MSE loss and Adam on a 60/20/20 split:
 
